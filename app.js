@@ -33,25 +33,14 @@ function generateComputerChoice() {
 function getResult() {
 	if (computerChoice === userChoice) {
 		result = "it's a draw !";
-	}
-	if (computerChoice === "rock" && userChoice === "paper") {
+	} else if (computerChoice === "rock" && userChoice === "paper") {
 		result = "You win !";
-	}
-	if (computerChoice === "rock" && userChoice === "scissors") {
+	} else if (computerChoice === "paper" && userChoice === "scissors") {
+		result = "You win !";
+	} else if (computerChoice === "scissors" && userChoice === "rock") {
+		result = "You win !";
+	} else {
 		result = "You lose !";
 	}
-	if (computerChoice === "paper" && userChoice === "scissors") {
-		result = "You win !";
-	}
-	if (computerChoice === "paper" && userChoice === "rock") {
-		result = "You lose !";
-	}
-	if (computerChoice === "scissors" && userChoice === "rock") {
-		result = "You win !";
-	}
-	if (computerChoice === "scissors" && userChoice === "paper") {
-		result = "You lose !";
-	}
-
 	resultDisplay.innerHTML = result;
 }
