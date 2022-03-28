@@ -1,5 +1,5 @@
 const grid = document.querySelector(".grid");
-const scoreDisplay = document.getElementById("#score");
+const scoreDisplay = document.querySelector("#score");
 const blockWidth = 100;
 const blockHeigth = 20;
 const ballDiameter = 20;
@@ -117,6 +117,11 @@ timerId = setInterval(moveBall, 30);
 
 // Check for collisions
 function checkForCollisions() {
+	//Check for block collisions
+	for(let i = 0; i < blocks.length ; i++){
+		if()
+	}
+
 	//Check for wall collisions
 	if (ballCurrentPosition[0] >= boardWidth - ballDiameter || ballCurrentPosition[1] >= boardHeight - ballDiameter || ballCurrentPosition[0] <= 0) {
 		changeDirection();
