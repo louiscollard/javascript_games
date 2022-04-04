@@ -19,13 +19,23 @@
 	background-color: blue;
 }
 
-.log-left,
-.log-right {
-	background-color: lightblue;
+.l1,
+.l2,
+.l3 {
+	background-color: brown;
 }
 
-.car-left,
-.car-right {
+.l4,
+.l5 {
+	background: lightblue;
+}
+
+.c1 {
+	background-color: black;
+}
+
+.c2,
+.c3 {
 	background-color: lightgray;
 }
 
