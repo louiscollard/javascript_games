@@ -6,7 +6,7 @@
 	flex-wrap: wrap;
 }
 
-.squares {
+.grid div {
 	width: 20px;
 	height: 20px;
 }
